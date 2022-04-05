@@ -13,4 +13,6 @@ export class PortApiService {
   getPortList():Observable<any[]>{
     return this.http.get<any[]>(this.portApiUrl+"/ports");
   }
+
+  
 }
