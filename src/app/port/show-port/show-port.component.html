@@ -1,1 +1,23 @@
-<p>show-port works!</p>
+
+<header><h1>Ports From Romania</h1></header>
+<table class="table table-stripped table-dark border mt-1">
+    <thead >
+        <tr>
+        <th>Port Id</th>
+        <th>Port Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of portList$|async" >
+                <td *ngIf="item.portCountryId == 1">{{item.portId}}</td>
+                <td *ngIf="item.portCountryId == 1">{{item.portName}}</td>
+        </tr>
+
+    </tbody>
+
+
+</table>
+
+<footer>
+    <p>&copy;Maciovan Razvan Alexandru</p>
+</footer>
